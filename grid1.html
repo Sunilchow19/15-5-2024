@@ -1,0 +1,123 @@
+<html>
+    <head>
+
+        <style>
+            #parent_div{
+                border: 1px solid ;
+
+                display: grid;
+              
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 50px 50px 50px 50px 50px 50px 50px ;
+               /* align-content: center; */
+               /* justify-content: center; */
+           
+               text-align: center;
+
+            }
+
+            #parent_div1{
+                border: 1px solid ;
+
+                display: grid;
+              
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 50px 50px 50px 50px 50px 50px 50px ;
+               /* align-content: center; */
+               /* justify-content: center; */
+           gap: 2px ;
+               text-align: center;
+               transition:  all 2s;
+
+            }
+
+            #parent_div1:hover{
+                   box-shadow: 5px 5px 10px;
+            }
+
+
+            #parent_div2{
+                border: 1px solid ;
+
+                display: grid;
+              
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 50px 50px 50px 50px 50px 50px 50px ;
+               /* align-content: center; */
+               /* justify-content: center; */
+          
+               text-align: center;
+               background-color: beige;
+               transition:all 2s;
+
+            }
+
+            #parent_div2:hover{
+                gap: 10px;
+               
+            }
+
+            #a:hover{
+                       background-color: blueviolet;
+            }
+
+            #b:hover{
+                       background-color: olivedrab;
+            }
+
+            #c:hover{
+                       background-color: goldenrod;
+            }
+
+            #d:hover{
+                       background-color:cadetblue
+            }
+
+            #e:hover{
+                       background-color: palevioletred;
+            }
+
+            #a,#b,#c,#d,#e{
+                transition: all 3s;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div  id="parent_div">
+            <div style="grid-column:1/6 ;border: 1px solid;padding-top: 15;"> Header Section</div>
+
+            <div style="grid-column: 1/6;border: 1px solid;padding-top: 15;">Navigation Bar</div>
+            <div style="border: 1px solid;grid-row: 3/7;grid-column: 1/2;padding-top: 75;">Index</div>
+            <div style="border: 1px solid;grid-column: 2/6;grid-row: 3/7;padding-top: 75;">Content Section</div>
+            <div style="border: 1px solid;grid-column: 1/6;padding-top: 15;">Footer Section</div>
+
+        </div>
+         
+        <br><br>
+
+        <div  id="parent_div1">
+            <div style="grid-column:1/6 ;border: 1px solid;padding-top: 15;"> Header Section</div>
+
+            <div style="grid-column: 1/6;border: 1px solid;padding-top: 15;">Navigation Bar</div>
+            <div style="border: 1px solid;grid-row: 3/7;grid-column: 1/2;padding-top: 75;">Index</div>
+            <div style="border: 1px solid;grid-column: 2/6;grid-row: 3/7;padding-top: 75;">Content Section</div>
+            <div style="border: 1px solid;grid-column: 1/6;padding-top: 15;">Footer Section</div>
+
+        </div>
+
+        <br><br>
+
+        <div id="parent_div2" >
+            <div style="grid-column:1/6 ;border: 1px solid;padding-top: 15;" id="a"> Header Section</div>
+
+            <div style="grid-column: 1/6;border: 1px solid;padding-top: 15;" id="b">Navigation Bar</div>
+            <div style="border: 1px solid;grid-row: 3/7;grid-column: 1/2;padding-top: 75;" id="c">Index</div>
+            <div style="border: 1px solid;grid-column: 2/6;grid-row: 3/7;padding-top: 75;" id="d">Content Section</div>
+            <div style="border: 1px solid;grid-column: 1/6;padding-top: 15;" id="e">Footer Section</div>
+
+        </div>
+
+    </body>
+</html>
